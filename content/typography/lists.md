@@ -13,13 +13,13 @@ nextLink: typography/links/
 
 Get started with a collection of list components built with Tailwind CSS for ordered and unordered lists with bullets, numbers, or icons and other styles and layouts to show a list of items inside an article or throughout your web page.
 
-## Unordored list
+## Unordered list
 
 Use this example to create a default unordered list of items using the `list-disc` class.
 
 {{< example id="unordered-list-example" github="typography/lists.md" show_dark=true >}}
 <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
-<ul class="space-y-1 max-w-md list-disc list-inside text-gray-500 dark:text-gray-400">
+<ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
     <li>
         At least 10 characters (and up to 100 characters)
     </li>
@@ -38,17 +38,23 @@ This example can be used to apply custom icons instead of the default bullets fo
 
 {{< example id="unordered-list-icon-example" github="typography/lists.md" show_dark=true >}}
 <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
-<ul class="space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400">
+<ul class="max-w-md space-y-1 text-gray-500 list-inside dark:text-gray-400">
     <li class="flex items-center">
-        <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+        <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+         </svg>
         At least 10 characters
     </li>
     <li class="flex items-center">
-        <svg class="w-4 h-4 mr-1.5 text-green-500 dark:text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+        <svg class="w-3.5 h-3.5 mr-2 text-green-500 dark:text-green-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+         </svg>
         At least one lowercase character
     </li>
     <li class="flex items-center">
-        <svg class="w-4 h-4 mr-1.5 text-gray-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+        <svg class="w-3.5 h-3.5 mr-2 text-gray-500 dark:text-gray-400 flex-shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+         </svg>
         At least one special character, e.g., ! @ # ?
     </li>
 </ul>
@@ -59,7 +65,7 @@ This example can be used to apply custom icons instead of the default bullets fo
 Use this example to nested another list of items inside the parent list element.
 
 {{< example id="unordered-list-nested-example" github="typography/lists.md" show_dark=true >}}
-<ul class="space-y-4 list-disc list-inside text-gray-500 dark:text-gray-400">
+<ul class="space-y-4 text-gray-500 list-disc list-inside dark:text-gray-400">
     <li>
         List item one
         <ol class="pl-5 mt-2 space-y-1 list-decimal list-inside">
@@ -93,7 +99,7 @@ Use the `list-none` class to disable the list style bullets or numbers.
 
 {{< example id="unordered-list-unstyled-example" github="typography/lists.md" show_dark=true >}}
 <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Password requirements:</h2>
-<ul class="space-y-1 max-w-md list-none list-inside text-gray-500 dark:text-gray-400">
+<ul class="max-w-md space-y-1 text-gray-500 list-none list-inside dark:text-gray-400">
     <li>
         At least 10 characters (and up to 100 characters)
     </li>
@@ -112,7 +118,7 @@ Use the `<ol>` tag to create an ordered list of items with numbers.
 
 {{< example id="ordered-list-example" github="typography/lists.md" show_dark=true >}}
 <h2 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Top students:</h2>
-<ol class="space-y-1 max-w-md list-decimal list-inside text-gray-500 dark:text-gray-400">
+<ol class="max-w-md space-y-1 text-gray-500 list-decimal list-inside dark:text-gray-400">
     <li>
         <span class="font-semibold text-gray-900 dark:text-white">Bonnie Green</span> with <span class="font-semibold text-gray-900 dark:text-white">70</span> points
     </li>
@@ -130,7 +136,7 @@ Use the `<ol>` tag to create an ordered list of items with numbers.
 This example can be used to nest multiple lists into each other.
 
 {{< example id="ordered-list-nested-example" github="typography/lists.md" show_dark=true >}}
-<ol class="space-y-4 list-decimal list-inside text-gray-500 dark:text-gray-400">
+<ol class="space-y-4 text-gray-500 list-decimal list-inside dark:text-gray-400">
    <li>
       List item one
       <ul class="pl-5 mt-2 space-y-1 list-disc list-inside">
@@ -181,33 +187,38 @@ Create a description list by using the `<dl>` tag and set the term and name with
 
 ## List with icons
 
-Use this example to create a list of items with custom SVG icons instead of the default bullets.
+Use this example to create a list of items with [custom SVG icons](https://flowbite.com/icons/) instead of the default bullets.
 
 {{< example id="list-icons-example" github="typography/lists.md" show_dark=true >}}
-<ul class="mb-8 space-y-4 text-left text-gray-500 dark:text-gray-400">
+<ul class="space-y-4 text-left text-gray-500 dark:text-gray-400">
     <li class="flex items-center space-x-3">
-        <!-- Icon -->
-        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+         <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
         <span>Individual configuration</span>
     </li>
     <li class="flex items-center space-x-3">
-        <!-- Icon -->
-        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
         <span>No setup, or hidden fees</span>
     </li>
     <li class="flex items-center space-x-3">
-        <!-- Icon -->
-        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
         <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
     </li>
     <li class="flex items-center space-x-3">
-        <!-- Icon -->
-        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
         <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
     </li>
     <li class="flex items-center space-x-3">
-        <!-- Icon -->
-        <svg class="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+        <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+         </svg>
         <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
     </li>
 </ul>
@@ -317,7 +328,7 @@ This example can be used to show more details for each list item such as the use
 Use this example to create a horizontally aligned list of items.
 
 {{< example id="horizontal-list-example" github="typography/lists.md" show_dark=true >}}
-<ul class="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+<ul class="flex flex-wrap items-center justify-center text-gray-900 dark:text-white">
     <li>
         <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
     </li>

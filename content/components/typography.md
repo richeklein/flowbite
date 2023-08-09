@@ -5,10 +5,10 @@ description: Use the typography plugin from Flowbite to apply styles to all inli
 group: components
 toc: true
 
-previous: List group
-previousLink: components/list-group/
-next: Modals
-nextLink: components/modal/
+previous: Tooltips
+previousLink: components/tooltips/
+next: Video
+nextLink: components/video/
 ---
 
 Get started with the [Flowbite Typography](https://github.com/themesberg/flowbite-typography) plugin forked from the official [Tailwind CSS Typography](https://tailwindcss.com/docs/typography-plugin) plugin to set a custom `format` class to a wrapper element to apply styles to all inline child elements such as headings, paragraphs, images, lists, and more and apply font sizes, font weights, colors, and spacings.
@@ -254,3 +254,7 @@ module.exports = {
   ],
 }
 ```
+
+## Blog templates
+
+You can check out the following [blog template](https://flowbite.com/blocks/publisher/blog-templates/) layouts from Flowbite Blocks that use the Typography plugin.
